@@ -117,6 +117,28 @@ return array(
             ]
         ),
         array(
+            "id" => 14,
+            "label"=>"批改管理",
+            "url"=>"/correcting",
+            "icon"=>"fa fa-magic",
+            "children"=>[
+                array(
+                    "id" => 141,
+                    "label"=>"作业列表",
+                    "url"=>"/correcting/lists",
+                    "icon"=>"fa fa-list",
+                    "schemaApi"=>"get:/public/pages/crud-correcting-list.json"
+                ),
+                array(
+                    "id" => 142,
+                    "label"=>"学员配置",
+                    "url"=>"/schedule/schedulelist",
+                    "icon"=>"fa fa-list",
+                    "schemaApi"=>"get:/public/pages/crud-schedule-list.json"
+                ),
+            ]
+        ),
+        array(
             "id" => 10,
             "label"=>"教室管理",
             "url"=>"/arearoom",
@@ -207,6 +229,13 @@ return array(
                     "url"=>"/subject/claszemap",
                     "icon"=>"fa fa-retweet",
                     "schemaApi"=>"get:/public/pages/crud-claszemap-list.json"
+                ),
+                array(
+                    "id" => 65,
+                    "label"=>"绑定批改",
+                    "url"=>"/subject/correcting",
+                    "icon"=>"fa fa-code-fork",
+                    "schemaApi"=>"get:/public/pages/crud-correcting-subject-list.json"
                 ),
                 array(
                     "id" => 64,

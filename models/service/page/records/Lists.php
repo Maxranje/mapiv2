@@ -145,6 +145,9 @@ class Service_Page_Records_Lists extends Zy_Core_Service{
         }
         
         foreach ($lists as $item) {
+            if (empty($item) || empty($item["nickname"])) {
+                continue;
+            }
             $tmp = array(
                 $item['create_time'],
                 $item['uid'],
